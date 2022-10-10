@@ -27,7 +27,7 @@ def close_connection(exception):
     if connection is not None:
         connection.close()
 
-@app.route('/')	@app.route('/')
-@app.route('/jobs')	@app.route('/jobs')
-def jobs():	def jobs():
-  return render_template('index.html')	    return render_template('index.html')
+@app.route('/')
+@app.route('/jobs')
+def jobs():
+  return render_template('index.html')
